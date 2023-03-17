@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Walsheim-Bold';
+  src: url("./../fonts/GTWalsheimPro-Bold.woff") format("woff"), url("./../fonts/GTWalsheimPro-Bold.woff2") format("woff2"), url("./../fonts/GTWalsheimPro-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: auto; }
+
+@font-face {
+  font-family: 'Walsheim-Regular';
+  src: url("./../fonts/GTWalsheimPro-Regular.woff") format("woff"), url("./../fonts/GTWalsheimPro-Regular.woff2") format("woff2"), url("./../fonts/GTWalsheimPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: auto; }
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+.step {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5.85vw;
+  align-items: center;
+  min-height: 16vw;
+  width: 85%; }
+  .step-number p {
+    font-family: 'Walsheim-Bold', sans-serif;
+    font-size: 6vw;
+    line-height: 6vw; }
+  .step-text p {
+    font-family: 'Walsheim-Regular', sans-serif;
+    font-size: 4.7vw;
+    line-height: 5.3vw; }
+
+.stepDesktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100px; }
+  .stepDesktop-number p {
+    font-family: 'Walsheim-Bold', sans-serif;
+    font-size: 46px;
+    line-height: 46px; }
+  .stepDesktop-text p {
+    font-family: 'Walsheim-Regular', sans-serif;
+    font-size: 36px;
+    line-height: 41px; }
+
+.footer {
+  background-image: url("../img/gradientBG.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 45px;
+    padding-top: 45px; }
+    @media (max-width: 768px) {
+      .footer-wrapper {
+        padding-bottom: 20px;
+        padding-top: 20px; } }
+    .footer-wrapper-title {
+      text-align: center; }
+      .footer-wrapper-title p {
+        font-family: 'Walsheim-Regular', sans-serif;
+        font-size: 26px;
+        line-height: 45px;
+        color: white; }
+        @media (max-width: 768px) {
+          .footer-wrapper-title p {
+            font-size: 3.3vw;
+            line-height: 3.3vw; } }
+    .footer-wrapper-text {
+      text-align: center; }
+      .footer-wrapper-text p {
+        font-family: 'Walsheim-Regular', sans-serif;
+        font-size: 22px;
+        line-height: 29px;
+        color: white; }
+        @media (max-width: 768px) {
+          .footer-wrapper-text p {
+            font-size: 3.3vw;
+            line-height: 3.3vw; } }
+
+body {
+  font-family: 'Manrope', sans-serif; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s; }
+  a:hover {
+    color: inherit; }
+
+.container {
+  max-width: 90%; }
+
+h1 {
+  font-size: 86px;
+  line-height: 103.2px;
+  font-weight: 600;
+  color: white; }
+
+h2 {
+  font-family: 'Walsheim-Bold', sans-serif;
+  font-size: 11vw;
+  line-height: 11vw;
+  color: white; }
+
+h3 {
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.01em; }
+
+p {
+  font-size: 24px;
+  line-height: 32.78px; }
+
+.index .hero-wrapper-desktop {
+  background: rgba(50, 12, 147, 0.742735);
+  background-image: linear-gradient(90deg, rgba(50, 12, 147, 0.742735) 20%, rgba(51, 5, 157, 0) 55%), url("../img/heroImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 130px 0; }
+  .index .hero-wrapper-desktop-info h2 {
+    font-size: 86px;
+    line-height: 86px;
+    margin-bottom: 15px; }
+  .index .hero-wrapper-desktop-info h3 {
+    font-family: 'Walsheim-Bold', sans-serif;
+    font-size: 38px;
+    line-height: 38px;
+    margin-bottom: 15px; }
+  .index .hero-wrapper-desktop-info p {
+    font-family: 'Walsheim-Regular', sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    color: white; }
+  .index .hero-wrapper-desktop-info-link {
+    margin-bottom: 20px; }
+
+.index .hero-wrapper-image {
+  overflow: hidden; }
+  .index .hero-wrapper-image img {
+    width: 100%;
+    height: auto;
+    scale: 1.3; }
+
+.index .hero-wrapper-info {
+  background-image: url("../img/gradientBG.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  padding-top: 6.5vw;
+  padding-bottom: 6.5vw;
+  text-align: center;
+  box-shadow: 0px -42px 19px 4px rgba(23, 33, 70, 0.48); }
+  .index .hero-wrapper-info h2 {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 7.8vw; }
+  .index .hero-wrapper-info-bubbles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: .1; }
+    .index .hero-wrapper-info-bubbles img {
+      width: 100%; }
+  .index .hero-wrapper-info-link {
+    position: relative;
+    z-index: 3; }
+
+.index .partners {
+  background-image: url("../img/ZigZagBG.png");
+  background-repeat: no-repeat;
+  background-size: 100%; }
+  .index .partners-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 0; }
+    .index .partners-wrapper-item {
+      width: 30%; }
+
+.index .predict {
+  background-image: url("../img/Top6BG.png");
+  background-repeat: no-repeat;
+  background-size: 150% 120%; }
+  .index .predict-wrapper {
+    text-align: center;
+    padding: 7.8vw 3.9vw; }
+    .index .predict-wrapper-image {
+      margin-bottom: 7.8vw; }
+      .index .predict-wrapper-image img {
+        width: 100%;
+        height: auto; }
+
+.index .predict-desktop {
+  background-image: url("../img/Top6BGDesktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px 0; }
+  .index .predict-desktop-wrapper {
+    position: relative; }
+    .index .predict-desktop-wrapper-info {
+      width: 40%; }
+      .index .predict-desktop-wrapper-info-image {
+        width: 100%;
+        margin-bottom: 60px; }
+      .index .predict-desktop-wrapper-info-text {
+        text-align: center; }
+        .index .predict-desktop-wrapper-info-text h2 {
+          font-size: 4.5vw;
+          line-height: 4.5vw;
+          margin-bottom: 15px;
+          color: black; }
+    .index .predict-desktop-wrapper-phone {
+      position: absolute;
+      right: -60px;
+      top: 0;
+      width: 75%;
+      overflow: hidden; }
+      .index .predict-desktop-wrapper-phone img {
+        float: right; }
+
+.index .steps {
+  background-image: url("../img/ZigZagBG.png");
+  background-size: 100% 100%;
+  padding-bottom: 30px; }
+  .index .steps-wrapper-image {
+    position: relative; }
+    .index .steps-wrapper-image img {
+      width: 100%;
+      height: auto; }
+    .index .steps-wrapper-image-link {
+      position: absolute;
+      right: 5%;
+      bottom: 15%; }
+  .index .steps-wrapper-items {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+    align-items: center; }
+
+.index .steps-desktop {
+  background-image: url("../img/ZigZagBG.png");
+  background-size: cover; }
+  .index .steps-desktop-wrapper {
+    padding: 60px 0; }
+    .index .steps-desktop-wrapper-link {
+      margin-bottom: 150px; }
+    .index .steps-desktop-wrapper-items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 40px; }
+      .index .steps-desktop-wrapper-items-block {
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px; }
+
+.green-button {
+  display: inline-block;
+  font-family: 'Walsheim-Regular', sans-serif;
+  color: black;
+  font-size: 4vw;
+  line-height: 5vw;
+  padding: 3.1vw 4vw;
+  background-color: #5CFC87;
+  border-radius: 9px;
+  cursor: pointer; }
+
+.green-button-desktop {
+  display: inline-block;
+  font-family: 'Walsheim-Regular', sans-serif;
+  color: black;
+  font-size: 32px;
+  line-height: 38px;
+  padding: 20px 30px;
+  background-color: #5CFC87;
+  border-radius: 9px;
+  cursor: pointer; }
