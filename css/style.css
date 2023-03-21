@@ -141,6 +141,11 @@ select {
   background-image: url("../img/gradientBG.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-wrapper {
@@ -149,8 +154,7 @@ select {
   flex-wrap: nowrap;
   align-items: center;
   gap: 20px;
-  padding-bottom: 45px;
-  padding-top: 45px;
+  padding: 15px 0px;
 }
 
 @media (max-width: 768px) {
@@ -181,6 +185,7 @@ select {
 
 .footer-wrapper-text {
   text-align: center;
+  padding-bottom: 140px;
 }
 
 .footer-wrapper-text p {

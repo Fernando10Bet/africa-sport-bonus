@@ -176,3 +176,16 @@ termsHeader[1].onclick = function (){
         termsState = true;
     }
 }
+
+/* button fixed */
+
+let buttonFixed = document.querySelector('.footer');
+let headerHieght = document.querySelector('.hero');
+
+window.onscroll = function (){
+    if(window.scrollY === 0){
+        buttonFixed.style.display = 'none'
+    }else{
+        buttonFixed.style.display = 'flex'
+    }
+}
