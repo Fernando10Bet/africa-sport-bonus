@@ -130,12 +130,13 @@ select {
         padding-bottom: 20px;
         padding-top: 20px; } }
     .footer-wrapper-title {
+      padding-top: 20px;
       text-align: center; }
       .footer-wrapper-title p {
         font-family: 'Walsheim-Regular', sans-serif;
         font-size: 26px;
         line-height: 45px;
-        color: white; }
+        color: black; }
         @media (max-width: 768px) {
           .footer-wrapper-title p {
             font-size: 3.3vw;
@@ -146,7 +147,7 @@ select {
         font-family: 'Walsheim-Regular', sans-serif;
         font-size: 22px;
         line-height: 29px;
-        color: white; }
+        color: black; }
         @media (max-width: 768px) {
           .footer-wrapper-text p {
             font-size: 3.3vw;
