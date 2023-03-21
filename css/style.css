@@ -358,3 +358,42 @@ p {
   background-color: #5CFC87;
   border-radius: 9px;
   cursor: pointer; }
+
+
+
+  /* New css */
+
+  /* 10bet logo */
+
+  @media screen and (max-width:767px) {
+    .header-logo{
+      position: absolute;
+      z-index: 999;
+      top: 10px;
+      left: 10px;
+    }
+    .header-logo img {
+      width: 90px;
+      height: 65px;
+    }
+  }
+
+  @media screen and (min-width:768px){
+    .header-logo{
+      margin-bottom: 50px;
+    }
+    .header-logo img{
+      width: 150px;
+      height: 120px;
+    }
+  }
+
+  @media screen and (min-width:1800px) {
+    .header-logo{
+      margin-bottom: 50px;
+    }
+    .header-logo img{
+      width: 170px;
+      height: 140px;
+    }
+  }
