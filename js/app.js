@@ -145,3 +145,34 @@ if (ctaRibbon) {
         prevScrollpos = currentScrollPos;
     };
 };
+
+/* new JS */
+
+let termsHeader = document.querySelectorAll('.terms-conditions-header');
+let termsHeaderP = document.querySelectorAll('.terms-conditions-header p:nth-of-type(2)');
+let termsText = document.querySelectorAll('.terms-conditions-text');
+let termsState = true;
+
+termsHeader[0].onclick = function (){
+    if(termsState){
+        termsHeaderP[0].innerText = '-'
+        termsText[0].style.display = 'flex'
+        termsState = false;
+    }else{
+        termsHeaderP[0].innerText = '+'
+        termsText[0].style.display = 'none'
+        termsState = true;
+    }
+}
+
+termsHeader[1].onclick = function (){
+    if(termsState){
+        termsHeaderP[1].innerText = '-'
+        termsText[1].style.display = 'flex'
+        termsState = false;
+    }else{
+        termsHeaderP[1].innerText = '+'
+        termsText[1].style.display = 'none'
+        termsState = true;
+    }
+}
