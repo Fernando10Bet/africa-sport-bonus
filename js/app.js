@@ -182,6 +182,10 @@ termsHeader[1].onclick = function (){
 let buttonFixed = document.querySelector('.footer');
 let headerHieght = document.querySelector('.hero');
 
+if(window.scrollY === 0){
+    buttonFixed.style.display = 'none'
+}
+
 window.onscroll = function (){
     if(window.scrollY === 0){
         buttonFixed.style.display = 'none'
