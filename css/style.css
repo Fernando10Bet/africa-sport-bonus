@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+body{
+  background-image: url(../img/ZigZagBG.png);
+  background-position: center;
+  background-size: cover;
+}
+
 @font-face {
   font-family: 'Walsheim-Bold';
   src: url("./../fonts/GTWalsheimPro-Bold.woff") format("woff"), url("./../fonts/GTWalsheimPro-Bold.woff2") format("woff2"), url("./../fonts/GTWalsheimPro-Bold.ttf") format("truetype");
@@ -326,7 +332,7 @@ p {
 }
 
 .index .partners {
-  background-image: url("../img/ZigZagBG.png");
+  /* background-image: url("../img/ZigZagBG.png"); */
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -408,7 +414,7 @@ p {
 }
 
 .index .steps {
-  background-image: url("../img/ZigZagBG.png");
+  /* background-image: url("../img/ZigZagBG.png"); */
   background-size: 100% 100%;
   padding-bottom: 30px;
 }
@@ -436,7 +442,7 @@ p {
 }
 
 .index .steps-desktop {
-  background-image: url("../img/ZigZagBG.png");
+  /* background-image: url("../img/ZigZagBG.png"); */
   background-size: cover;
 }
 
