@@ -628,6 +628,13 @@ li {
   background-size: cover;
   width: 30%;
   height: 100%;
+  padding: .5em .5em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 15px;
 }
 
 .step-top > div{
@@ -635,7 +642,6 @@ li {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  padding: .5em 0;
   color:white;
 }
 
@@ -664,5 +670,11 @@ li {
     height: auto;
     min-height: 6rem;
     padding: .5em 0;
-  }
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    margin-top: 0;
+}
 }
