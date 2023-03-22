@@ -602,3 +602,61 @@ li {
   font-family: 'Walsheim-Regular';
   font-size: 12px;
 }
+
+/* steps */
+
+.steps-top{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: clamp(8rem,9rem,12rem);
+}
+
+.step-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/gradientBG.png);
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+  height: 100%;
+}
+
+.step-top > div{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: .5em 0;
+  color:white;
+}
+
+.step-top div:first-of-type{
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Walsheim-Bold';
+}
+
+.step-top div:last-of-type{
+  width: 90%;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Walsheim-Regular';
+}
+
+@media screen and (max-width:950px) {
+  .steps-top{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .step-top{
+    width: 100%;
+    height: auto;
+    min-height: 6rem;
+    padding: .5em 0;
+  }
+}
