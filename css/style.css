@@ -340,7 +340,7 @@ p {
 .index .partners-wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
   align-items: center;
   justify-content: center;
@@ -349,7 +349,8 @@ p {
 
 .index .partners-wrapper-item {
   width: 30%;
-  min-width: 250px;
+  min-width: 80px;
+  max-width: 200px;
 }
 
 .partners-wrapper-item img{
@@ -622,7 +623,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: clamp(8rem,9rem,12rem);
+  height: clamp(9rem,10rem,12rem);
 }
 
 .step-top{
@@ -634,7 +635,7 @@ li {
   background-size: cover;
   width: 32%;
   height: 100%;
-  padding: .5em 1em;
+  padding: 2em 1em;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -659,7 +660,7 @@ li {
 }
 
 .step-top div:first-of-type p{
-  font-size: 69px;
+  font-size: 50px;
 }
 
 .step-top div:last-of-type{
@@ -670,10 +671,10 @@ li {
 }
 
 .step-top div:last-of-type p{
-  font-size: 39px;
+  font-size: 30px;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1200px) {
   .steps-top{
     flex-direction: column;
     height: auto;
