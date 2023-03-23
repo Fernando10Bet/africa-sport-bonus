@@ -345,6 +345,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 20px 0;
+  width: 100%;
 }
 
 .index .partners-wrapper-item {
@@ -613,7 +614,7 @@ p {
 b,
 li {
   font-family: 'Walsheim-Regular';
-  font-size: 12px;
+  font-size: 22px;
 }
 
 /* steps */
@@ -704,4 +705,10 @@ li {
   .step-top div:first-of-type{
     align-items: center;
   }
+
+  .terms-conditions-text p,
+b,
+li {
+  font-size: 3.3vw;
+}
 }
