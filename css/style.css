@@ -690,5 +690,17 @@ li {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     margin-top: 0;
-}
+  }
+
+  .step-top div:first-of-type p{
+    font-size: 50px;
+  }
+
+  .step-top div:last-of-type p{
+    font-size: 25px;
+  }
+
+  .step-top div:first-of-type{
+    align-items: center;
+  }
 }
