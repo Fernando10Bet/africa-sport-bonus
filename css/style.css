@@ -510,17 +510,25 @@ p {
   }
 }
 
+@media screen and (max-width:450px){
+  .header-logo img {
+    width: 90px !important;
+    height: 65px !important;
+  }
+}
+
 @media screen and (max-width:767px) {
   .header-logo {
-    position: absolute;
+    position: relative;
     z-index: 999;
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 20px;
+    margin-bottom: 30px;
   }
 
   .header-logo img {
-    width: 90px;
-    height: 65px;
+    width: 120px;
+    height: 90px;
   }
 
   .index .partners-wrapper{
@@ -553,7 +561,7 @@ p {
 
   .header-logo img {
     width: 140px;
-    height: 120px;
+    height: 100px;
   }
 }
 
