@@ -525,7 +525,7 @@ p {
 
   .index .partners-wrapper{
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
 
