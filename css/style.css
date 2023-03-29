@@ -352,7 +352,7 @@ p {
 }
 
 .index .partners-wrapper {
-  padding: 20px 20px;
+  padding: 20px 0px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -670,7 +670,7 @@ li {
 .steps-top{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: clamp(9rem,10rem,12rem);
 }
