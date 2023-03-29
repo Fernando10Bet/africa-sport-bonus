@@ -186,12 +186,13 @@ select {
   .footer-wrapper-title p {
     font-size: 3.3vw;
     line-height: 3.3vw;
+    margin-bottom: 15px;
   }
 }
 
 .footer-wrapper-text {
   text-align: center;
-  padding-bottom: 140px;
+  padding-bottom: clamp(100px,10vh,115px);
 }
 
 .footer-wrapper-text p {
@@ -205,6 +206,8 @@ select {
   .footer-wrapper-text p {
     font-size: 3.3vw;
     line-height: 3.3vw;
+    width: 100%;
+    text-align: justify;
   }
 }
 
