@@ -309,16 +309,19 @@ p {
 .index .hero-wrapper-info h2 {
   position: relative;
   z-index: 3;
-  margin-bottom: 40px;
-  font-size: 35px;
+  margin-bottom: 5vw;
+  font-size: 5vw;
 }
 
 .index .hero-wrapper-info h3 {
   position: relative;
   z-index: 3;
-  margin-bottom: 20px;
-  font-size: 70px;
-  line-height: 60px;
+  font-size: 10vw;
+  line-height: 10vw;
+}
+
+.index .hero-wrapper-info h3:last-of-type {
+  margin-bottom: 30px;
 }
 
 .index .hero-wrapper-info-bubbles {
